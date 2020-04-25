@@ -25,24 +25,24 @@ def parse(path_to_file):
             headers += 1
     # ---------------------------------------
     max_ = 0
-    tag = body.find_next('a')
-    while tag is not None:
+    tagsa = body.find_all('a')
+    for t in tagsa:
         sum_ = 1
-        subtags = tag.find_next_siblings()
+        subtags = t.find_next_siblings()
         for i in subtags:
             if i.name == "a":
                 sum_ += 1
                 if sum_ > max_:
                     max_ = sum_
             else:
-                sum_ = 1
+                sum_ = 0
                 continue
-        tag = tag.find_next('a')
     linkslen = max_
     # ---------------------------------------
     for i in body.find_all(True):
         if i.name == "ul" or i.name == "ol":
             lists += 1
             i.decompose()
+    # ---------------------------------------
 
     return [imgs, headers, linkslen, lists]
