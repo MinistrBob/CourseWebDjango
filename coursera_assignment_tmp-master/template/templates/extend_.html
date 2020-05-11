@@ -1,8 +1,11 @@
+<!--extend.html-->
+
 {% extends "base.html" %}
 
 {% block block_a %}
-    Simple text a {{a}}
+    {{ block.super }}: {{ a }}
 {% endblock %}
+
 {% block block_b %}
-    Simple text b {{b}}
+    {{ block.super }}: {{ b }}
 {% endblock %}
