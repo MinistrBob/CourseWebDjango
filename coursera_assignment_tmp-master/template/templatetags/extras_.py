@@ -1,3 +1,5 @@
+# extras.py
+
 from django import template
 
 register = template.Library()
@@ -10,7 +12,5 @@ def inc(value, arg):
 
 @register.simple_tag
 def division(a, b, to_int=False):
-    if to_int:
-        return int(int(a) / int(b))
-    else:
-        return int(a) / int(b)
+    res = int(a) / int(b)
+    return int(res) if to_int else res

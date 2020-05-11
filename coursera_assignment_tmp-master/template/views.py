@@ -13,6 +13,7 @@ def echo(request):
     }, status=200)
 
 
+@csrf_exempt
 def filters(request):
     return render(request, 'filters.html', context={
         'a': request.GET.get('a', 1),
@@ -20,6 +21,7 @@ def filters(request):
     })
 
 
+@csrf_exempt
 def extend(request):
     return render(request, 'extend.html', context={
         'a': request.GET.get('a'),
