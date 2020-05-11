@@ -1,0 +1,7 @@
+{% for key, value in get_dict.items %}
+    get {{ key }}: {{ value }}
+{% endfor %}
+{% for key, value in post_dict.items %}
+    post {{ key }}: {{ value }}<br>
+{% endfor %}
+statement is {{st|default_if_none:"empty"}}
