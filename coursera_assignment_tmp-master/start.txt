@@ -1,0 +1,12 @@
+-- Активировать виртуальное окружение
+c:\Users\MinistrBob\.virtualenvs\CourseWebDjango\Scripts\activate.bat
+
+-- запустить Django
+python c:\MyGit\CourseWebDjango\coursera_assignment_tmp-master\manage.py runserver
+-- создать файл миграций для БД
+python c:\MyGit\CourseWebDjango\coursera_assignment_tmp-master\manage.py makemigrations
+-- применить файл миграций на БД
+python c:\MyGit\CourseWebDjango\coursera_assignment_tmp-master\manage.py migrate
+
+-- 
+python c:\MyGit\CourseWebDjango\coursera_assignment_tmp-master\manage.py shell
