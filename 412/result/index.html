@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#startpage">StackOverflow</a>
+
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="space">
+
+</div>
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-8">
+
+
+            <div class="media mb-4">
+
+
+                <div class="user_data_main">
+
+                    <img class="d-flex mr-3 rounded-circle" src="./100x100.png" alt="">
+                    <!--<button type="button" class="tn btn-secondary btn-sm likes_main">
+                        Likes <span class="badge badge-light">7</span>
+                    </button>-->
+
+                            <input class="vote likes_form_main" type="number" value="5">
+                </div>
+
+                <div class="media-body ">
+                    <h5 class="mt-5">Question from Ofek Saar</h5>
+                    I managed to create man in the middle connection(using Scapy) and now I need to read all
+                    https content going through my computer (using iptables and Mitmproxy- I think). I don't understand
+                    how
+                    to do that. (I know https cannot be read but I need to manipulate the "victim" somehow- reverse
+                    proxy,
+                    something like sslstrip or mitmproxy) I succeed to look and change any coming packet using nfqueue
+                    and
+                    Scapy together(I can read the packet's content but it's encrypted). My operation system is Kali so
+                    most
+                    of the tools are already built in. My program language is python 2.7 can someone help me figure
+                    it out?1
+                    <p></p>
+                    <p>Posted on January 1, 2018 at 12:00 PM</p>
+
+                    <b>Tags:</b>
+                    <a href="#tag_python">python</a>
+                    <a href="#tag_iptables">iptables</a>
+                    <a href="#tag_iptables">mitmproxy</a>
+                </div>
+            </div>
+
+
+
+            <hr>
+
+
+            <!-- Single Comment -->
+            <div class="media mb-4 my_border">
+
+                <div class="user_data">
+
+                    <img class="d-flex mr-3 rounded-circle avatar_img" src="./50x50.png" alt="">
+                    <!--<<button type="button" class="tn btn-secondary btn-sm likes">
+                        Likes <span class="badge badge-light">4</span>
+                    </button>-->
+
+                            <input class="vote likes_form" type="number" value="5">
+                </div>
+
+
+                <div class="media-body">
+                    <h5 class="mt-0"> Jonathon Reinhart</h5>You need to use the tools correctly - read through the docs
+                    of
+                    mitmproxy (mitmproxy.org) - it's very easy to use. You need to trust the cert on your device so it
+                    can spoof the server cert. Otherwise you can't decrypt the traffic for obvious reasons.
+                </div>
+            </div>
+
+
+            <div class="media mb-4 my_border">
+                <div class="user_data">
+
+                    <img class="d-flex mr-3 rounded-circle avatar_img " src="./50x50.png" alt="">
+                    <!--<<button type="button" class="tn btn-secondary btn-sm likes">
+                        Likes <span class="badge badge-light">4</span>
+                    </button>-->
+
+                            <input class="vote likes_form" type="number" value="5">
+                </div>
+                <div class="media-body">
+                    <h5 class="mt-0"> Jonathon Reinhart</h5>You need to use the tools correctly - read through the docs
+                    of
+                    mitmproxy (mitmproxy.org) - it's very easy to use. You need to trust the cert on your device so it
+                    can spoof the server cert. Otherwise you can't decrypt the traffic for obvious reasons.
+
+                </div>
+            </div>
+
+            <!-- Comments Form -->
+            <div class="card my-4">
+                <h5 class="card-header">Leave your answer here:</h5>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+
+            <!-- Popular Tags Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Popular Tags</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#Coursera">Coursera</a>
+                                </li>
+                                <li>
+                                    <a href="#Django">Django</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#Python">Python</a>
+                                </li>
+                                <li>
+                                    <a href="#MySql">MySql</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best Members -->
+            <div class="card my-4">
+                <h5 class="card-header">Best Members</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#Mr.Freeman">Mr.Freeman</a>
+                                </li>
+                                <li>
+                                    <a href="#Dr.House">Dr.House</a>
+                                </li>
+                                <li>
+                                    <a href="#Bender">Bender</a>
+                                </li>
+                                <li>
+                                    <a href="#Queen_Victoria">Queen Victoria</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-2 ">
+        <div class="container">
+            <p class="m-12 text-center">Copyright © Your Website 2018</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+</body>
+</html>

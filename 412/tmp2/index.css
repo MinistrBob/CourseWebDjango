@@ -1,0 +1,52 @@
+.navbar {
+    height: 100px;
+    border-bottom: 5px solid grey;
+}
+
+.navbar__logo {
+    font-family:'Comic Sans MS';
+    font-size: 30px;
+}
+
+.navbar__button {    
+    border-left-color: #808080;
+    border-top-color: #808080;
+    border-bottom-color: #808080;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #ffffff;
+}
+
+.navbar__form {
+    border-right-color: #808080;
+    border-top-color: #808080;
+    border-bottom-color: #808080;
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.body__block {
+    margin-top: 20px;
+}
+
+.body__question {
+    margin-bottom: 20px;
+    border-bottom: 3px solid grey;
+    padding-bottom: 20px;
+}
+
+.body__answer {
+    border: 1px solid gray;
+    padding: 10px 10px 10px 10px;
+}
+
+.my__answer {
+    margin-top: 20px;
+    border-top: 3px solid grey;
+    padding-top: 20px;
+    margin-bottom: 20px;    
+}
+
+.input__number {
+    max-width: 70px;
+    padding: 5px 5px 5px 5px;    
+}

@@ -1,0 +1,39 @@
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.tags-list a {
+    margin: 5px 10px;
+}
+
+.image-placeholder {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+
+.rating {
+    border: 1px solid lightgray;
+    display: inline-block;
+    padding: 0 7px;
+    margin: 5px 0;
+}
+.rating .rating__value {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 0px 10px;
+    margin-top: -20px;
+}
+.rating .rating__buttons {
+    display: inline-block;
+    cursor: pointer;
+}
+.rating .rating__rate-up:hover {
+    color: green;
+}
+.rating .rating__rate-down:hover {
+    color: red;
+}

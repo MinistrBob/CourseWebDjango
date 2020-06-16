@@ -1,0 +1,2 @@
+Все работы проводились в Chrome.
+В IE11 работает не правильно, потому что "Bootstrap ends support to Internet Explorer v10 and v11" - https://www.techzine.eu/news/devops/46161/bootstrap-ends-support-to-internet-explorer-v10-and-v11/

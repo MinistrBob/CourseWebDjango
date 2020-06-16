@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ranga');
+
+* {
+    font-family: 'Ranga', cursive;
+    font-size: 20px
+}
+
+.border-radius-20 {
+    border-radius: 45px
+}
+
+.grey-text {
+    color: grey
+}
+
+.more-size {
+    font-size: 25px
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    * {
+        font-size: 15px
+    }
+    .wid-100 {
+        max-width: 949px;
+        width: 100%;
+
+    }
+    img.avatar {
+        width: 110px;
+        height: auto
+    }
+    img.avatar-comment {
+        width: 70px;
+        height: auto
+    }
+    .margin-left {
+        margin-left: -32px
+    }
+    .margin-left.topic {
+        margin-left: -10px
+    }
+    .navbar-collapse.margin-left{
+    margin-left: 35% !important
+    }
+
+    .navbar-brand{
+        font-size: 25px
+    }
+}
+
+
+
+@media screen and (max-width: 2000px) and (min-width: 1700px) {
+    .wid-100 {
+        max-width: 1900px;
+        width: 100%;
+
+    }
+    img.avatar {
+        width: 200px;
+        height: auto
+    }
+    img.avatar-comment {
+        width: 150px;
+        height: auto
+    }
+    .margin-left {
+        margin-left: -15px
+    }
+    .margin-left.topic {
+        margin-left: 15px
+    }
+
+    .navbar-collapse.margin-left{
+    margin-left: 45% !important
+    }
+    .navbar-brand{
+        font-size: 30px
+    }
+}
+
+
+.line-hr {
+border: 0;
+height: 1px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff, #000, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+
+.mod-border {
+    border: 3px solid black;
+}
+

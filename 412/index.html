@@ -1,0 +1,191 @@
+<!--{% load static %}-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>-->
+    <title>AskPupkin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+<!--    <link rel="stylesheet" type="text/css" href="{% static 'core/css/index.css' %}">-->
+</head>
+<body>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Stackoverflow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="navbar-search form-inline my-2 my-lg-0">
+                <input class="search-query form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="#">Log in</a></li>
+                <li class="nav-item active"><a href="#">Register</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="row">
+        <div class="mycol col-8">
+            <div class="question">
+                <div class="row">
+                    <div class="mycol col-2">
+                        <div>
+                            <div class="avatar-big">
+                                <!--                                <a class="empty_image" href="#"><img src="flower.jpg" width="82" height="86" title="White flower" alt="Flower"></a>-->
+                                <a href="#"><img class="avatar"
+                                                 src="data:image/png;base64,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"
+                                                 alt="empty image"></a>
+                            </div>
+                            <div>
+                                <input type="number" class="count" value="5">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mycol col-10">
+                        <div>
+                            <h4>How to build a moon park ?</h4>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.</p>
+                        </div>
+                        <div>
+
+                            <div class="oneline">
+                                <p class="oneline">Tags: <a class="oneline" href="#">black-jack</a> <a class="oneline"
+                                                                                                       href="#">bender</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mycol col-12 answers">
+                    <div class="box">
+                        <div>
+                            <p class="avatar-small">
+                                <!--                                <a class="empty_image" href="#"><img src="flower.jpg" width="82" height="86" title="White flower" alt="Flower"></a>-->
+                                <a href="#"><img class="avatar"
+                                                 src="data:image/png;base64,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"
+                                                 alt="empty image"></a>
+                            </p>
+                            <p>
+                                <input type="number" class="count" value="5">
+                            </p>
+
+                        </div>
+                        <div>
+                            <h6>How to build a moon park ?</h6>
+                            <p class="answer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mycol col-12 answers">
+                    <div class="box">
+                        <div>
+                            <p class="avatar-small">
+                                <!--                                <a class="empty_image" href="#"><img src="flower.jpg" width="82" height="86" title="White flower" alt="Flower"></a>-->
+                                <a href="#"><img class="avatar"
+                                                 src="data:image/png;base64,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"
+                                                 alt="empty image"></a>
+                            </p>
+                            <p>
+                                <input type="number" class="count" value="5">
+                            </p>
+
+                        </div>
+                        <div class="answer-text-box">
+                            <h6>How to build a moon park ?</h6>
+                            <p class="answer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row answer">
+                <div class="mycolans col-12">
+                    <div class="form-group">
+                        <textarea class="form-control mytextarea" name="message" rows="7">Enter your answer here.</textarea>
+                        <button type="button" onclick="alert('button pressed!')">Answer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mycol col-4">
+            <div class="row-right-panel">
+                <div class="mycol col-12">
+                    <div><h4>Popular Tags</h4></div>
+                    <div>
+                        <p>
+                            <a class="tags" href="#">coursera</a>
+                            <a class="tags" href="#">python</a>
+                            <a class="tags" href="#">mysql</a>
+                            <a class="tags" href="#">django</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-right-panel">
+                <div class="mycol col-12">
+                    <div><h4>Best Members</h4></div>
+                    <div>
+                        <ul class="best-members">
+                            <li><a href="#">Mr.Ivanoff</a></li>
+                            <li><a href="#">Dr.Petroff</a></li>
+                            <li><a href="#">Ser.Sidoroff</a></li>
+                            <li><a href="#">Mama Mia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+#container {
+    border:2px solid black;
+    width: 700px;
+    background: snow;
+}
+#cheader {
+   /* border-bottom:2px solid black; 
+    border:2px solid black;
+    padding:2px;
+    margin:2px;*/
+    background: #EEE;
+    height: 40px;
+    font-size: 1.5vmin;
+}
+#cfooter {
+    border-top:2px solid black;
+    background: #EEE;
+    /*height: 40px; */
+    font-size: 1.5vmin;
+}
+#ccontent {
+    border:2px solid red;
+    background: rgb(88, 175, 161);
+}
+#hpan {
+    /* border-bottom:2px solid black; */
+    background: rgb(235, 231, 40);
+    height: 50px;
+}
+#rpan {
+    /*border-bottom:2px solid black; */
+    background: rgb(99, 237, 241);
+    width: 250px;
+    float:right;
+}
+
+hr.fading {
+    border: 0; 
+    height: 1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}

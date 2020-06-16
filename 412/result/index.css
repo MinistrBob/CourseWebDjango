@@ -1,0 +1,35 @@
+.space{
+    margin-top: 4rem;
+}
+.my_border{
+    border: 1px solid rgba(190,169,159,0.6);
+    border-radius: 4px;
+    padding: 15px;
+}
+.likes{
+    margin-top: 15px;
+}
+.user_data{
+    margin-right: 15px;
+}
+.user_data_main{
+    margin-right: 15px;
+    margin-top: 30px;
+}
+.likes_main{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.avatar_img{
+    margin-left: 10px;
+}
+.likes_form_main{
+    border-radius:4px;
+    margin: 20px;
+    width: 60px;
+}
+.likes_form{
+    border-radius:4px;
+    margin: 15px;
+    width: 40px;
+}

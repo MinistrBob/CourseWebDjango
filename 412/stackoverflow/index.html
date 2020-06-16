@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stackoverflow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <form>
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Stackoverflow</h1>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="search-addon"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="search-field" placeholder="Search"
+                               aria-label="Search" aria-describedby="search-addon">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="user">
+                        <a href="#">log in</a><a href="#">register</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </header>
+
+    <div class="row line"></div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row question">
+                <div class="col-sm-4 col-md-3 col-lg-2 question-avatar">
+                    <div class="avatar">
+                        <svg version="1.1" id="user1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96px" height="96px"
+                             viewBox="0 0 785.8159 1010" enable-background="new 0 0 785.8159 1010"
+                             xml:space="preserve">
+                            <g id="user1-user">
+                                <path fill="#323B5A" d="M392.9692,0c135.251,0,244.8565,109.5234,244.8565,244.6914c0,135.312-109.6055,244.8145-244.8565,244.8145
+                                    c-135.1269,0-244.7734-109.5025-244.7734-244.8145C148.1958,109.5234,257.8423,0,392.9692,0z"/>
+                                <path fill="#323B5A" d="M785.8159,1010h-0.5762H0V876.8457c0-173.7793,109.3999-321.1318,261.9521-376.0586l131.0171,174.6016
+                                    l130.9756-174.6016c152.5938,54.9268,261.8711,202.2793,261.8711,376.0586V1010z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <table class="table table-borderless table-sm counter">
+                        <tbody>
+                        <tr>
+                            <td class="counter-value" rowspan="2">5</td>
+                            <td class="counter-control counter-control-up"><i class="fas fa-caret-up fa-lg"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="counter-control counter-control-down"><i class="fas fa-caret-down fa-lg"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-8 col-md-9 col-lg-10 question-text">
+                    <h2>How to build a moon park?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="question-tags">Tags: <a href="#">black-jack</a> <a href="#">bender</a></p>
+                </div>
+            </div>
+
+            <div class="row line"></div>
+
+            <div class="row answer">
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <div class="avatar">
+                        <svg version="1.1" id="user2" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="72px"
+                             viewBox="0 0 785.8159 1010" enable-background="new 0 0 785.8159 1010" xml:space="preserve">
+                        <g id="user2-user">
+                            <path fill="#323B5A" d="M392.9692,0c135.251,0,244.8565,109.5234,244.8565,244.6914c0,135.312-109.6055,244.8145-244.8565,244.8145
+                                c-135.1269,0-244.7734-109.5025-244.7734-244.8145C148.1958,109.5234,257.8423,0,392.9692,0z"/>
+                            <path fill="#323B5A" d="M785.8159,1010h-0.5762H0V876.8457c0-173.7793,109.3999-321.1318,261.9521-376.0586l131.0171,174.6016
+                                l130.9756-174.6016c152.5938,54.9268,261.8711,202.2793,261.8711,376.0586V1010z"/>
+                        </g>
+                        </svg>
+                    </div>
+                    <table class="table table-borderless table-sm counter">
+                        <tbody>
+                        <tr>
+                            <td class="counter-value" rowspan="2">0</td>
+                            <td class="counter-control counter-control-up"><i class="fas fa-caret-up fa-lg"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="counter-control counter-control-down"><i class="fas fa-caret-down fa-lg"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-8 col-md-9 col-lg-10 answer-text">
+                    <p>С другой стороны консультация с широким активом позволяет оценить значение позиций, занимаемых
+                        участниками в отношении поставленных задач. Не следует, однако забывать, что дальнейшее развитие
+                        различных форм деятельности представляет собой интересный эксперимент проверки дальнейших
+                        направлений развития. С другой стороны новая модель организационной деятельности обеспечивает
+                        широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</p>
+                </div>
+            </div>
+            <div class="row answer">
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <div class="avatar">
+                        <svg version="1.1" id="user3" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="72px"
+                             viewBox="0 0 785.8159 1010" enable-background="new 0 0 785.8159 1010" xml:space="preserve">
+                        <g id="user3-user">
+                            <path fill="#323B5A" d="M392.9692,0c135.251,0,244.8565,109.5234,244.8565,244.6914c0,135.312-109.6055,244.8145-244.8565,244.8145
+                                c-135.1269,0-244.7734-109.5025-244.7734-244.8145C148.1958,109.5234,257.8423,0,392.9692,0z"/>
+                            <path fill="#323B5A" d="M785.8159,1010h-0.5762H0V876.8457c0-173.7793,109.3999-321.1318,261.9521-376.0586l131.0171,174.6016
+                                l130.9756-174.6016c152.5938,54.9268,261.8711,202.2793,261.8711,376.0586V1010z"/>
+                        </g>
+                        </svg>
+                    </div>
+                    <table class="table table-borderless table-sm counter">
+                        <tbody>
+                        <tr>
+                            <td class="counter-value" rowspan="2">-3</td>
+                            <td class="counter-control counter-control-up"><i class="fas fa-caret-up fa-lg"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="counter-control counter-control-down"><i class="fas fa-caret-down fa-lg"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-8 col-md-9 col-lg-10 answer-text">
+                    <p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское
+                        обеспечение нашей деятельности способствует подготовки и реализации дальнейших направлений
+                        развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей
+                        активности в значительной степени обуславливает создание соответствующий условий активизации.
+                        Разнообразный и богатый опыт реализация намеченных плановых заданий позволяет оценить значение
+                        новых предложений.</p>
+                </div>
+            </div>
+
+            <div class="row line"></div>
+
+            <div class="row">
+                <div class="col-sm-12 your-answer">
+                    <!--                <div>-->
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="your-answer-field" rows="3"
+                                      placeholder="Enter your answer here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Answer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="tags">
+                <h2>Popular Tags</h2>
+                <a href="#">coursera</a><a href="#">python</a><a href="#">mysql</a><a href="#">django</a><a href="#">stepik</a>
+            </div>
+            <div class="members">
+                <h2>Best Members</h2>
+                <ul>
+                    <li><a href="#">Mr. Freeman</a></li>
+                    <li><a href="#">Dr. House</a></li>
+                    <li><a href="#">Bender</a></li>
+                    <li><a href="#">Queen Victoria</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+<script>
+$( ".counter-control-up" ).click(function(e) {
+    el = $(e.target).parents(".counter").find('.counter-value');
+    el.html( parseInt(el.text()) + 1);
+});
+
+$( ".counter-control-down" ).click(function(e) {
+    el = $(e.target).parents(".counter").find('.counter-value');
+    el.html( parseInt(el.text()) - 1);
+});
+
+</script>
+
+</body>
+</html>

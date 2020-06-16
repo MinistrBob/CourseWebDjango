@@ -1,0 +1,136 @@
+h2 {
+    font-size: 1.5rem;
+}
+
+header {
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 26px;
+    display: inline-block;
+}
+
+header .input-group-text {
+    color: lightgray;
+    background-color: transparent;
+    border-right: none;
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+}
+
+#search-field {
+    border-left: none;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+header .user {
+    padding-left: 10px;
+}
+
+header a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+.question-avatar {
+    padding-left: 0;
+}
+
+.question-text {
+    padding-right: 0;
+}
+
+.question-tags a {
+    display: inline-block;
+    padding-right: 5px;
+    text-decoration: underline
+}
+
+.answer {
+    border: 2px solid black;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.line {
+    border-top: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    padding-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.counter {
+    border: 2px solid black;
+    text-align: center;
+    line-height: .9;
+    width: 75px;
+    table-layout: fixed;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.counter .counter-value {
+    width: 45px;
+    overflow-x: hidden;
+    vertical-align: middle;
+}
+
+.counter .counter-control {
+    width: 30px;
+    border-left: 2px solid black;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.your-answer {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.your-answer textarea {
+    border: 2px solid black;
+    border-radius: 0;
+}
+
+.your-answer button {
+    box-shadow: 5px 5px gray;
+}
+
+.tags {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+.tags a {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.members {
+    padding-left: 10px;
+}
+
+.members ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.members a {
+    text-decoration: underline;
+}
