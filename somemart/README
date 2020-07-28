@@ -1,0 +1,6 @@
+curl -v -H "Content-Type: application/json" -X POST -d '{"title":"tovar1","description":"tovar1desc","price":42}' http://127.0.0.1:8000/api/v1/goods/
+
+curl -v -H "Content-Type: application/json" -X POST -F "title=tovar1" -F "description=tovar1desc" -F "price=44" http://127.0.0.1:8000/api/v1/goods/
+
+
+http://127.0.0.1:8000/api/v1/goods/11/reviews/
